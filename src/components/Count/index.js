@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 export default class Count extends Component {
-  state = {count:0}
+  // state = {count:0}
   // componentDidMount() {
   //   store.subscribe(() =>{
   //     this.setState([])
@@ -10,6 +10,7 @@ export default class Count extends Component {
   
   increme = () =>{
     const {value} = this.selectType
+    this.props.add(value*1)
   }
   decreme = () =>{
     const {value} = this.selectType
@@ -22,10 +23,10 @@ export default class Count extends Component {
     const {value} = this.selectType
   }
   render() {
-    const {count} = this.state
+    // const {count} = this.state
     return (
       <div>
-        <h1>当前值为:????</h1>
+        <h1>当前值为:{this.props.count}</h1>
         <select ref={e => this.selectType = e}>
           <option value="1">1</option>
           <option value="2">2</option>
