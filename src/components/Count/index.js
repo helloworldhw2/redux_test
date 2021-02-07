@@ -10,17 +10,19 @@ export default class Count extends Component {
   
   increme = () =>{
     const {value} = this.selectType
-    this.props.add(value*1)
+    this.props.incress(value*1)
   }
   decreme = () =>{
     const {value} = this.selectType
+    this.props.decress(value*1)
   }
   incremeByOdd = () =>{
     const {value} = this.selectType
-    
+    if(this.props.count % 2 !== 0) this.props.incress(value*1)
   }
   incremeAsyn = () =>{
     const {value} = this.selectType
+    this.props.incressAsyn(value*1)
   }
   render() {
     // const {count} = this.state

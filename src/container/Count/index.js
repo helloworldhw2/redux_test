@@ -1,19 +1,22 @@
 import { connect } from 'react-redux'
 import CountUi from '../../components/Count'
-import {increment} from '../../redux/count_action'
+import {increment,decrement,incrementAsyn} from '../../redux/count_action'
 
-const a = state =>{
+const mapStateToProps = state =>{
   return {count:state}
 }
 
-const b = dispatch =>{
+const mapDispatchToProps = dispatch =>{
   return {
-      add:data=> dispatch(increment(data))
+      incress:data=> dispatch(increment(data)),
+      decress:data=> dispatch(decrement(data)),
+      deincressOdd:data=> dispatch(decrement(data)),
+      incressAsyn:data=> dispatch(incrementAsyn(data,500)),
     }
   
 }
 
-export default connect(a,b)(CountUi)
+export default connect(mapStateToProps,mapDispatchToProps)(CountUi)
 
 
 
