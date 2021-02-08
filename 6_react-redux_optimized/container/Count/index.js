@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import {increment,decrement,incrementAsyn} from '../../redux/actions/count'
+import {increment,decrement,incrementAsyn} from '../../redux/count_action'
 
 
 class Count extends Component {
@@ -24,8 +24,7 @@ class Count extends Component {
     // const {count} = this.state
     return (
       <div>
-        <h1>我是Count组件</h1>
-        <h4>当前值为:{this.props.count}</h4>
+        <h1>当前值为:{this.props.count}</h1>
         <select ref={e => this.selectType = e}>
           <option value="1">1</option>
           <option value="2">2</option>
@@ -41,7 +40,7 @@ class Count extends Component {
 }
 
 export default connect(
-    state => ( {count:state.count}),
+    state => ( {count:state}),
     {
       incress:increment,
       decress:decrement,

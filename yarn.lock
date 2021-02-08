@@ -7279,8 +7279,8 @@ nan@^2.12.1:
 
 nanoid@^3.1.20:
   version "3.1.20"
-  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.1.20.tgz#badc263c6b1dcf14b71efaa85f6ab4c1d6cfc788"
-  integrity sha512-a1cQNyczgKbLX9jwbS/+d7W8fX/RfgYR7lVWwWOGIPNgK2m0MWvrGF6/m4kk6U3QcFMnZf3RIhL0v2Jgh/0Uxw==
+  resolved "https://registry.npm.taobao.org/nanoid/download/nanoid-3.1.20.tgz?cache=0&sync_timestamp=1606835818061&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fnanoid%2Fdownload%2Fnanoid-3.1.20.tgz#badc263c6b1dcf14b71efaa85f6ab4c1d6cfc788"
+  integrity sha1-utwmPGsdzxS3HvqoX2q0wdbPx4g=
 
 nanomatch@^1.2.9:
   version "1.2.13"
@@ -9135,6 +9135,11 @@ redent@^3.0.0:
   dependencies:
     indent-string "^4.0.0"
     strip-indent "^3.0.0"
+
+redux-devtools-extension@^2.13.8:
+  version "2.13.8"
+  resolved "https://registry.npm.taobao.org/redux-devtools-extension/download/redux-devtools-extension-2.13.8.tgz#37b982688626e5e4993ff87220c9bbb7cd2d96e1"
+  integrity sha1-N7mCaIYm5eSZP/hyIMm7t80tluE=
 
 redux-thunk@^2.3.0:
   version "2.3.0"
