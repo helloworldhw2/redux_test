@@ -9,7 +9,7 @@ class Count extends Component {
     this.props.increment(value*1)
   }
   decreme = () =>{
-    const {value} = this.selectTypey
+    const {value} = this.selectType
     this.props.decrement(value*1)
   }
   incremeByOdd = () =>{
